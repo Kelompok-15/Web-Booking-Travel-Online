@@ -1,0 +1,29 @@
+.jumbotron{
+    background-image: url(mal.jpg);
+    background-size: cover;
+    background-position-y: 1000px;
+    height: 600px;
+    text-align: center;
+}
+.jumbotron .display-4{
+    color:white;
+    margin-top: 150px
+}
+
+.jumbotron hr{
+    border-color: #F05F40;
+    width: 70px;
+    border-width: 3px;
+}
+.jumbotron .btn{
+   background-color: #F05F40;
+   border: none;
+   border-radius: 25px;
+   padding-right: 30px;
+   padding-left: 30px;
+   margin-top: 40px;
+}
+.color1{
+    background-color: rgb(245, 237, 222);
+}
+
