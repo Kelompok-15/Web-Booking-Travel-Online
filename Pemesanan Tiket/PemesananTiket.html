@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8" >
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+      body {
+          background-color: white;
+          background-image: url(img/tree.png);
+      }                       
+      
+      .feather{
+          width: 20px;
+          height: 20px;
+          margin-bottom: 2.5px;
+      }
+
+      footer {
+          text-align: center;
+          padding-top: 60px;
+          padding-bottom: 80px;
+          background-color:black;
+          color: gold;
+       }
+    </style>
+<body>
+  <nav class="navbar navbar-light bg-warning d-flex justify-content-between">
+    <a class="navbar-brand ml-5 my-2 font-italic font-weight-bold">
+        <i data-feather="send"></i>TRIVEL
+    </a>
+    
+    <form class="form-inline ml-5 my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Type to Search" aria-label="Search">
+      <button class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="submit">
+        <i data-feather="search"></i>
+      </button>
+    </form>
+    
+    <div class="row">
+      <div class="col mx-0">
+      <a class="nav-link active" href="#">Home</a>
+      </div>
+
+      <div class="col mx-0">
+      <a class="nav-link" href="#">Booking</a>
+      </div>
+
+      <div class="btn-group dropleft col">
+          <button type="button" class="btn btn-dark btn-outline-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i data-feather="user"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Daftar</a>
+            <a class="dropdown-item" href="#">Masuk</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Rekomendasi Wisata</a>
+            <a class="dropdown-item" href="#">Tentang Kami</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</nav>
+    <div class="container">
+        <h1 class ="mt-3"><img src="imgP/tiket.png" width="100" height="100">Ticket</h1>
+        <nav id="navbar-example2" class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">Choose Your Ticket</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#Flights"><img src="imgP/plane.svg" width="25" height="25">Flights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#train"><img src="imgP/train.png" width="25" height="25">Train</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hotel"><img src="imgP/hotel.svg" width="25" height="25">Hotel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bus"><img src="imgP/bus.svg" width="25" height="25">Bus&Shuttle</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-block text-left" type="button" 
+                  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" 
+                  aria-controls="collapseOne"><img src="imgP/plane.svg" width="50" height="50" id="Flights">Flights
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse toggle show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="mt-3">Trip</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option> One-way Trip </option>
+                      <option> Round Trip </option>
+                      <option> Multi-city </option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">From</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>-> Select your City / Airport</option>
+                      <option> Jakarta, Indonesia</option>
+                      <option> New York, America </option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlSelect1">To</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>-> Select Your Destination </option>
+                        <option>Jakarta, Indonesia </option>
+                        <option>New York, America </option>
+                      </select>
+                  </div>
+                  <hr>
+                <div class="mb-3">No. of Passengers
+                    <img src="imgP/passenger.svg">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Adult (Age 12 or older)</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                  </select>
+                  <label for="exampleFormControlSelect1">Child (Age 2-11)</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                  <label for="exampleFormControlSelect1">Infant (Below age 2)</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+                <hr>
+                <div class="form-group">
+                        <label for="exampleFormControlSelect1">Seat Class</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Economy</option>
+                          <option>Premium Economy</option>
+                          <option>Business</option>
+                          <option>First Class</option>
+                        </select>
+                        <hr>
+                </div>
+                <hr>
+                <input type="checkbox" id="agreement" name="agreement">
+                <label for="agreement" class="mb-3">I agree for terms & use</label>
+                <div>
+                <button type="button" class="btn btn-warning btn-lg mb-5"><img src="imgP/search.svg">Search Ticket</button>
+              </div>
+              </div>
+            </div>
+            <nav id="navbar-example2" class="navbar navbar-light bg-light">
+              <a class="navbar-brand" href="#">Choose Your Ticket</a>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#Flights"><img src="imgP/plane.svg" width="25" height="25">Flights</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#train"><img src="imgP/train.png" width="25" height="25">Train</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#hotel"><img src="imgP/hotel.svg" width="25" height="25">Hotel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#bus"><img src="imgP/bus.svg" width="25" height="25">Bus&Shuttle</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-block text-left collapsed" type="button" 
+                  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <img src="imgP/train.png" width="50" height="50" id="train">Train</button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse toggle show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="mt-3">Origin</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>-> Select your Station</option>
+                      <option>Jakarta, Indonesia</option>
+                      <option>Bandung, Indonesia</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleFormControlSelect1">Destination</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>-> Select your Station</option>
+                      <option>Jakarta, Indonesia</option>
+                      <option>Bandung, Indonesia</option>
+                    </select>
+                  </div>
+                  <form>
+                    <label for="Departure" class="mb-3">Departure</label>
+                    <input type="date" id="Departure" name="Departure">
+                  </form>
+                  <hr>
+                  <div class="mt-3 mb-3">No. of Passengers</div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Adult (Age 12 or older)</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <label for="exampleFormControlSelect1">Child (Age 2-11)</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <label for="exampleFormControlSelect1">Infant (Below age 2)</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                <hr>
+                <input type="checkbox" id="agreement" name="agreement">
+                <label for="agreement" class="mb-3">I agree for terms & use</label>
+                <div>
+                <button type="button" class="btn btn-warning btn-lg mb-5"><img src="imgP/search.svg">Search Ticket</button>
+              </div>
+            </div>
+            </div>
+            <nav id="navbar-example2" class="navbar navbar-light bg-light">
+              <a class="navbar-brand" href="#">Choose Your Ticket</a>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#Flights"><img src="imgP/plane.svg" width="25" height="25">Flights</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#train"><img src="imgP/train.png" width="25" height="25">Train</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#hotel"><img src="imgP/hotel.svg" width="25" height="25">Hotel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#bus"><img src="imgP/bus.svg" width="25" height="25">Bus&Shuttle</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-block text-left collapsed" type="button" 
+                  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <img src="imgP/hotel.svg" width="50" height="50" id="hotel">Hotel</button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse toggle show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1" class="mt-3">City or Destination or Hotel name</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Popular Destination</option>
+                      <option>Jakarta, Indonesia</option>
+                      <option>Bandung, Indonesia</option>
+                    </select>
+                  </div>
+                  <form>
+                    <label for="Departure" class="mb-3">Check-in</label>
+                    <input type="date" id="Departure" name="Departure">
+                  </form>
+
+                  <form>
+                    <label for="Departure" class="mb-3">Check-out</label>
+                    <input type="date" id="Departure" name="Departure">
+                  </form>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Room</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Single</option>
+                      <option>Double</option>
+                      <option>Duluxe</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Guest</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                <hr>
+                <input type="checkbox" id="agreement" name="agreement">
+                <label for="agreement" class="mb-3">I agree for terms & use</label>
+                <div>
+                <button type="button" class="btn btn-warning btn-lg mb-5"><img src="imgP/search.svg">Search Ticket</button>
+              </div>
+            </div>
+              </div>
+              <nav id="navbar-example2" class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">Choose Your Ticket</a>
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Flights"><img src="imgP/plane.svg" width="25" height="25">Flights</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#train"><img src="imgP/train.png" width="25" height="25">Train</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#hotel"><img src="imgP/hotel.svg" width="25" height="25">Hotel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#bus"><img src="imgP/bus.svg" width="25" height="25">Bus&Shuttle</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left collapsed" type="button" 
+                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <img src="imgP/bus.svg" width="50" height="50" id="bus">Bus & Shuttle</button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse toggle show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1" class="mt-3">Origin</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>-> Select your Station</option>
+                          <option>Jakarta, Indonesia</option>
+                          <option>Bandung, Indonesia</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                      <label for="exampleFormControlSelect1">Destination</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>-> Select your Station</option>
+                          <option>Jakarta, Indonesia</option>
+                          <option>Bandung, Indonesia</option>
+                        </select>
+                      </div>
+                      <form>
+                        <label for="Departure" class="mb-3">Departure</label>
+                        <input type="date" id="Departure" name="Departure">
+                      </form>
+                      <hr>
+                      <div class="mt-3 mb-3">No. of Seats</div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">Ticket(2 years above must buy)</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                      </div>
+                    <hr>
+                    <input type="checkbox" id="agreement" name="agreement">
+                    <label for="agreement" class="mb-3">I agree for terms & use</label>
+                    <div>
+                    <button type="button" class="btn btn-warning btn-lg mb-5"><img src="imgP/search.svg">Search Ticket</button>
+                  </div>
+                </div>
+                </div>
+
+                <h4 class="mt-3 mb-4">Payment Powered By :</h4>
+                <img src="imgP/paypal.png" width="75" height="75">
+                <img src="imgP/visa.png" width="150" height="75">
+                <img src="imgP/flazz.png" width="150" height="75">
+              </div>
+            </div>
+        </div>
+    </div>
+    <footer class= "mt-4">
+      <p>Contact Us Through
+         <br>
+         <br>
+         <i data-feather="instagram" style="width: 35px; height: 35px;"></i>         
+         <i data-feather="facebook" style="width: 35px; height: 35px;"></i>         
+         <i data-feather="twitter" style="width: 35px; height: 35px;"></i>         
+         <i data-feather="github" style="width: 35px; height: 35px;"></i>
+         <br><br><br><br><br>
+         Copyright &copy; 2020 by TRIVEL 
+         <br>
+         All Rights Reserved
+      </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            feather.replace();
+        </script>
+</body>
+</head>
