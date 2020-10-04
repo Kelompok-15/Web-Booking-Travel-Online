@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8" >
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>    
+    .hotel1{
+      font-size: 30px;
+    }                  
+    .feather{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 2.5px;
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        background-color:black;
+        color: gold;
+     }
+  </style>
+  </head>
+
+<body>
+    <nav class="navbar navbar-light bg-warning d-flex justify-content-between">
+        <a class="navbar-brand ml-5 my-2 font-italic font-weight-bold">
+            <i data-feather="send"></i>TRIVEL
+        </a>
+        
+        <form class="form-inline ml-5 my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Type to Search" aria-label="Search">
+          <button class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="submit">
+            <i data-feather="search"></i>
+          </button>
+        </form>
+        
+        <div class="row">
+          <div class="col mx-0">
+          <a class="nav-link active" href="#">Home</a>
+          </div>
+    
+          <div class="col mx-0">
+          <a class="nav-link" href="#">Booking</a>
+          </div>
+    
+          <div class="btn-group dropleft col">
+              <button type="button" class="btn btn-dark btn-outline-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i data-feather="user"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Daftar</a>
+                <a class="dropdown-item" href="#">Masuk</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Rekomendasi Wisata</a>
+                <a class="dropdown-item" href="#">Tentang Kami</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+        <div class="container">
+            <div class="col border rounded" style="background-color: lightgoldenrodyellow; ">
+                <div class="row">
+                    <div class="col-sm">
+                        <h3 class="my-3 text">Hotel at Bandung</h3>
+                        <div>30 Sep 2020 - 2 Oct 2020</div>
+                        <div class="text-right mb-3">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Change Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="mt-3"></div>
+          <div class="row">
+          <div class="col-3">
+            <div class="col-sm border rounded">
+                <h4 class="mt-3 mx-3">Category</h4>
+                <div class="form-check mt-3 mb-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Highest Popularity
+                    </label>
+                  </div>
+                  <div class="form-check mt-2 mb-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Lowest Price
+                    </label>
+                  </div>
+                    <div class="form-check mt-2 mb-3">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                          Best Accomodation
+                        </label>
+                      </div>
+                      <div class="form-check mt-2 mb-3">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                        <label class="form-check-label" for="exampleRadios4">
+                          Best Review Score
+                        </label>
+                      </div>
+            </div>
+            <div class="col-sm border rounded">
+                <h4 class="mt-3 mx-3">Booking Policy</h4>
+                <div class="form-check mt-3 mb-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Free Cancellation
+                    </label>
+                  </div>
+            </div>
+            <div class="col-sm border rounded">
+                <h4 class="mt-3 mx-3">Star Ranking</h4>
+                <div class="form-check mt-3 mb-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        <img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1">
+                    </label>
+                  </div>
+                  <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        <img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1">
+                    </label>
+                  </div>
+                  <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        <img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1">
+                    </label>
+                  </div>
+                  <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        <img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1">
+                    </label>
+                  </div>
+                  <div class="form-check mt-3 mb-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        <img src = "imgP/star.svg" class="mb-1">
+                    </label>
+                  </div>
+            </div>
+            <div class="col-sm border rounded">
+                <h4 class="mt-3 mx-3">Facilities</h4>
+                <div class="form-check mt-3 mb-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        WiFi
+                    </label>
+                  </div>
+                  <div class="form-check mt-3 mb-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Sofa
+                    </label>
+                  </div>
+                  <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Swimming Pool
+                    </label>
+                  </div>
+                  <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        24-hours Front-Desk Service
+                    </label>
+                  </div>
+                  <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                    <label class="form-check-label mb-2" for="defaultCheck1">
+                        Meeting Room
+                    </label>
+                  </div>
+            </div>
+            </div>
+            <div class="col-sm border rounded">
+                <ul class="nav justify-content-center mt-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">All</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pay upon Check-in</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">New Accomodation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Family-Friendly</a>
+                    </li>
+                  </ul>
+                  <hr>
+                  <div class="card mb-3" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="imgP/hoteltrans.jpg" class="card-img" alt="hoteltrans" height="100%">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h3 class="card-title">Trans Luxury Hotel</h3>
+                          <p class="card-text"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"></p>
+                          <p class="card-text mb-3"><small class="text-muted"><i data-feather="map-pin"></i>Batununggal, Bandung</small></p>
+                          <div class="text-right text-primary">Rp659.000/Night</div>
+                          <a href="PilihKamarHotel.html"><div class="text-right my-2"><button class="btn btn-warning"><b>Choose Room Type</b></button></div>
+                        </a></div>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3" style="max-width: 100%;">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img src="imgP/hotelgrandia.jpeg" class="card-img" alt="hotelgrandia" height="100%">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h3 class="card-title">Hotel Grandia</h3>
+                            <p class="card-text"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"></p>
+                            <p class="card-text mb-3"><small class="text-muted"><i data-feather="map-pin"></i>Bandung, Bandung</small></p>
+                            <div class="text-right text-primary">Rp433.000/Night</div>
+                            <div class="text-right my-2"><button class="btn btn-warning"><b>Choose Room Type</b></button></div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="card mb-3" style="max-width: 100%;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="imgP/hotelarkeo.jpg" class="card-img" alt="hotelarkeo" height="100%">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h2 class="card-title">Hotel Arkeo</h2>
+                              <p class="card-text"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"><img src = "imgP/star.svg" class="mb-1"></p>
+                              <p class="card-text mb-3"><small class="text-muted"><i data-feather="map-pin"></i>Cicendo, Bandung</small></p>
+                              <div class="text-right text-primary">Rp284.000/Night</div>
+                              <div class="text-right my-2"><button class="btn btn-warning"><b>Choose Room Type</b></button></div>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+
+                  </div>  
+
+            </div>
+            
+        </div>
+    </div>
+    <footer class= "mt-4">
+        <p>Contact Us Through
+           <br>
+           <br>
+           <i data-feather="instagram" style="width: 35px; height: 35px;"></i>         
+           <i data-feather="facebook" style="width: 35px; height: 35px;"></i>         
+           <i data-feather="twitter" style="width: 35px; height: 35px;"></i>         
+           <i data-feather="github" style="width: 35px; height: 35px;"></i>
+           <br><br><br><br><br>
+           Copyright &copy; 2020 by TRIVEL 
+           <br>
+           All Rights Reserved
+        </p>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            feather.replace();
+        </script>
+</body>
+</html>
