@@ -69,85 +69,68 @@
 </nav>
     <div class="container">
         <div class="accordion" id="accordionExample">
-            <div class="card card-0 mt-4">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0"><img src="imgP/plane.png" width="50" height="50" id="Flights">Flights</h2>
+            <div class="card card-1 mt-4">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <img src="imgP/train1.png" width="50" height="50" id="train">Train</button>
+                </h2>
               </div>
-              <div id="collapseOne" class="collapse toggle show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div id="collapseTwo" class="collapse toggle show" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1" class="mt-3">Trip</label>
+                    <label for="exampleFormControlSelect1" class="mt-3">Origin</label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                      <option> One-way Trip </option>
-                      <option> Round Trip </option>
-                      <option> Multi-city </option>
-                    </select>
-                  </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">From</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>-> Select your City / Airport</option>
-                      <option> Jakarta, Indonesia</option>
-                      <option> New York, America </option>
+                      <option>-> Select your Station</option>
+                      <option>Jakarta, Indonesia</option>
+                      <option>Bandung, Indonesia</option>
                     </select>
                   </div>
                   <div class="form-group">
-                      <label for="exampleFormControlSelect1">To</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>-> Select Your Destination </option>
-                        <option>Jakarta, Indonesia </option>
-                        <option>New York, America </option>
-                      </select>
+                  <label for="exampleFormControlSelect1">Destination</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>-> Select your Station</option>
+                      <option>Jakarta, Indonesia</option>
+                      <option>Bandung, Indonesia</option>
+                    </select>
                   </div>
+                  <form>
+                    <label for="Departure" class="mb-3">Departure</label>
+                    <input type="date" id="Departure" name="Departure">
+                  </form>
                   <hr>
-                <div class="mb-3">No. of Passengers
-                    <img src="imgP/passenger.svg">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Adult (Age 12 or older)</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
+                  <div class="mt-3 mb-3">No. of Passengers</div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Adult (Age 12 or older)</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <label for="exampleFormControlSelect1">Child (Age 2-11)</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>0</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
                       <option>4</option>
-                  </select>
-                  <label for="exampleFormControlSelect1">Child (Age 2-11)</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
-                  <label for="exampleFormControlSelect1">Infant (Below age 2)</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
-                </div>
-                <hr>
-                <div class="form-group">
-                        <label for="exampleFormControlSelect1">Seat Class</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Economy</option>
-                          <option>Premium Economy</option>
-                          <option>Business</option>
-                          <option>First Class</option>
-                        </select>
-                        <hr>
-                </div>
+                    </select>
+                    <label for="exampleFormControlSelect1">Infant (Below age 2)</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
                 <hr>
                 <input type="checkbox" id="agreement" name="agreement">
                 <label for="agreement" class="mb-3">I agree for terms & use</label>
                 <div>
-                <a href="PencarianTiketPesawat.html"><button type="button" class="btn btn-warning btn-lg mb-5"><img src="imgP/search.svg">
-                Search Ticket</button></a>
-              </div>
-              </div>
+                <a href="PencarianTiketKereta.html"><button class="btn btn-warning btn-lg mb-5"><img src="imgP/search.svg">Search Ticket</button>
+                </a></div>
             </div>
-        </div>
+            </div>
                 <div class="payment">
                 <h4 class="mt-3 mb-4">Payment Powered By :</h4>
                 <img src="imgP/paypal.png" width="75" height="75">
