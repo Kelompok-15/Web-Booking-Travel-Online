@@ -33,29 +33,42 @@
 .jumbotron .card-center{
     background-position: center;
 }
-
 .card{
     border-color: white;
     position: center;
 }
-.card-header{
+.card .card-header{
     background-color: rgb(250, 191, 82);
 }
 .p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.card-body2{
-    background-color: wheat;
+.card .cado{
+    font-family: merienda;
+}
+.card .parah{
+    font-family: merienda;
+}
+.card-body{
+    background-color: whitesmoke;
 }
 .row .para{
     font-family: merienda;
 }
-.card .cado{
-    font-family: merienda;
+.feather{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2.5px;
 }
-.card2 .cado{
-    font-family: merienda;
-}
+
+footer {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-color:black;
+    color: gold;
+ }
+
 
 
 

@@ -9,8 +9,45 @@
     <title>Trip Sydney</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="no7.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   </head>
   <body>
+    <nav class="navbar navbar-light bg-warning d-flex justify-content-between">
+      <a class="navbar-brand ml-5 my-2 font-italic font-weight-bold">
+          <i data-feather="send"></i>TRIVEL
+      </a>
+      
+      <form class="form-inline ml-5 my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Type to Search" aria-label="Search">
+        <button class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="submit">
+          <i data-feather="search"></i>
+        </button>
+      </form>
+      
+      <div class="row">
+        <div class="col mx-0">
+        <a class="nav-link active" href="#">Home</a>
+        </div>
+  
+        <div class="col mx-0">
+        <a class="nav-link" href="#">Booking</a>
+        </div>
+  
+        <div class="btn-group dropleft col">
+            <button type="button" class="btn btn-dark btn-outline-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i data-feather="user"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Daftar</a>
+              <a class="dropdown-item" href="#">Masuk</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Rekomendasi Wisata</a>
+              <a class="dropdown-item" href="#">Tentang Kami</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
 
   <div class="jumbotron">
     <div class="container">
@@ -54,122 +91,118 @@
     </div>
   </section>
 
-<div class="container">
-  <div class="row">
+  <div class="container">
     <div class="col text-center">
-      <h1>Your Trip</h1>
-      <br>
-    </div>
+      <h1>YOUR TRIP</h1>
   </div>
 
-<div class="card w-75">
-  <div class="card-body">
-    <h5 class="card-title">DAY 1</h5>
-    <div class="accordion" id="bagian1">
-      <div class="card w-75">
-        <div class="card-header mr-3" id="header1">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1"><h5>Read More</h5></button>
-        </div>
-        <div id="collapse1" class="collapse show" aria-labelledby="header1" data-parent="#bagian1">
-        <div class="cado card-body2 mr-3">
-          <p>• The taxi driver will meet customers at the airport 
-            in time for their flight and drop them off at their hotel . </p>
-          <p>• Hotel check-in </p>
-          <p>• Fragonard Perfumery Visit in Eze</p>
-        </div>
+  <br>
+  <br>
+
+  <section style="margin-bottom:150px">
+    <div>
+      <div class="container">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header font-weight-bold">
+              DAY 1
+            </div>
+            <div class="card-body md-3">
+              <blockquote class="blockquote mb-0">
+                <div class="parah">
+                  <p>• The taxi driver will meet customers at the airport 
+                    in time for their flight and drop them off at their hotel . </p>
+                  <p>• Hotel check-in </p>
+                  <p>• Fragonard Perfumery Visit in Eze</p>
+                  </div>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header font-weight-bold">
+              DAY 2
+            </div>
+            <div class="cado card-body md-3">
+              <blockquote class="blockquote mb-0">
+                <div class="parah">
+                  <p>• Breakfast at hotel</p>
+                  <p>• Visit Opera House The Sydney Opera House is the 
+                      city's most famous landmark, where you can watch 
+                      dozens of shows and dine at top restaurants</p>
+                  <p>• Adjacent to the Sydney Opera House is the Harbor 
+                      Bridge which is perfect for taking photos. 
+                      Visitors can climb the 134 meter high Harbor 
+                      Bridge for spectacular views.</p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header font-weight-bold">
+              DAY 3
+            </div>
+            <div class="cado card-body md-3">
+              <blockquote class="blockquote mb-0">
+                <div class="parah">
+                  <p>• Breakfast at hotel  </p>
+                  <p>• Visit The Rocks. The Rocks is Sydney's 
+                      heritage district, home to a 100 year old 
+                      building that sits alongside modern galleries and cafes.</p>
+                  <p>• Visit Bondi Beach. Bondi Beach is a popular beach for relaxing and surfing</p>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header font-weight-bold">
+              DAY 4
+            </div>
+            <div class="cado card-body md-3">
+              <blockquote class="blockquote mb-0">
+                <div class="parah">
+                  <p>• Breakfast at hotel</p>
+                  <p>• Sydney has many culinary options. 
+                      Visitors can choose a famous restaurant 
+                      like Quay or try more affordable street food.</p>
+                  <p>• Free time</p>
+                  <p>• Proceed to Airport !</p>
+              </div>
+              </blockquote>
+            </div>
+          </div>
+          <br>
+          <a href="Data7.html"><button class="btn btn-warning btn-lg mb-5" type="submit">Continue</button></a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+</div>
 </div>
 
-<div class="card2 w-75">
-  <div class="card-body">
-    <h5 class="card-title">DAY 2</h5>
-    <div class="accordion" id="bagian2">
-      <div class="card2 w-75">
-        <div class="card-header mr-3" id="header1">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2"><h5>Read More</h5></button>
-        </div>
-        <div id="collapse2" class="collapse show" aria-labelledby="header1" data-parent="#bagian2">
-        <div class="cado card-body2 mr-3 ">
-          <p>• Breakfast at hotel</p>
-          <p>• Visit Opera House The Sydney Opera House is the 
-              city's most famous landmark, where you can watch 
-              dozens of shows and dine at top restaurants</p>
-          <p>• Adjacent to the Sydney Opera House is the Harbor 
-              Bridge which is perfect for taking photos. 
-              Visitors can climb the 134 meter high Harbor 
-              Bridge for spectacular views.</p>
-        
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="card2 w-75">
-  <div class="card-body">
-    <h5 class="card-title">DAY 3</h5>
-    <div class="accordion" id="bagian3">
-      <div class="card2 w-75">
-        <div class="card-header mr-3" id="header1">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3"><h5>Read More</h5></button>
-        </div>
-        <div id="collapse3" class="collapse show" aria-labelledby="header1" data-parent="#bagian3">
-        <div class="cado card-body2 mr-3">
-          <p>• Breakfast at hotel  </p>
-          <p>• Visit The Rocks. The Rocks is Sydney's 
-              heritage district, home to a 100 year old 
-              building that sits alongside modern galleries and cafes.</p>
-          <p>• Visit Bondi Beach. Bondi Beach is a popular beach for relaxing and surfing</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="card2 w-75">
-  <div class="card-body">
-    <h5 class="card-title">DAY 4</h5>
-    <div class="accordion" id="bagian4">
-      <div class="card2 w-75">
-        <div class="card-header mr-3" id="header1">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4"><h5>Read More</h5></button>
-        </div>
-        <div id="collapse4" class="collapse show" aria-labelledby="header1" data-parent="#bagian4">
-        <div class="cado card-body2 mr-3">
-          <p>• Breakfast at hotel</p>
-          <p>• Sydney has many culinary options. 
-              Visitors can choose a famous restaurant 
-              like Quay or try more affordable street food.</p>
-          <p>• Free time</p>
-          <p>• Proceed to Airport !</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<button type="button" class="btn btn-warning ml-3">Book Now!</button>
-
-
-  
-  
+  <footer class= "mt-4">
+    <p>Contact Us Through
+       <br>
+       <br>
+       <i data-feather="instagram" style="width: 35px; height: 35px;"></i>         
+       <i data-feather="facebook" style="width: 35px; height: 35px;"></i>         
+       <i data-feather="twitter" style="width: 35px; height: 35px;"></i>         
+       <i data-feather="github" style="width: 35px; height: 35px;"></i>
+       <br><br><br><br><br>
+       Copyright &copy; 2020 by TRIVEL 
+       <br>
+       All Rights Reserved
+    </p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      
+      <script src="https://unpkg.com/feather-icons"></script>
+      <script>
+          feather.replace();
+      </script>
 
 
 
-
-<br><br><br><br><br><br><br><br>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
   </body>
 </html>
