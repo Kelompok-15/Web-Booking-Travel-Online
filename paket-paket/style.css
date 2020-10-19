@@ -1,3 +1,6 @@
+body{
+    background-color: whitesmoke;
+}
 .carousel-item{
     height: 85vh;
     min-height: 300px;
@@ -113,4 +116,5 @@ footer {
  .row .jpn{
      font-family: merienda;
  }
+ 
 
