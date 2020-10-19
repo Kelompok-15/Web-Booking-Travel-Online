@@ -32,27 +32,26 @@
 .jumbotron .card-center{
     background-position: center;
 }
-
 .card{
     border-color: white;
     position: center;
 }
-.card-header{
+.card .card-header{
     background-color: rgb(250, 191, 82);
 }
 .p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.card-body2{
-    background-color: wheat;
-}
-.row .para{
-    font-family: merienda;
-}
 .card .cado{
     font-family: merienda;
 }
-.card2 .cado{
+.card .parah{
+    font-family: merienda;
+}
+.card-body{
+    background-color: whitesmoke;
+}
+.row .para{
     font-family: merienda;
 }
 
