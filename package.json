@@ -1,0 +1,27 @@
+{
+  "name": "trivel",
+  "version": "1.0.0",
+  "description": "Trivel provides solutions for your travel needs, airline tickets, hotels & lodging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kelompok-15/Web-Booking-Travel-Online.git"
+  },
+  "keywords": [
+    "Travel",
+    "Flight",
+    "Hotel"
+  ],
+  "author": "Kelvianto Husodo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kelompok-15/Web-Booking-Travel-Online/issues"
+  },
+  "homepage": "https://github.com/Kelompok-15/Web-Booking-Travel-Online#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
