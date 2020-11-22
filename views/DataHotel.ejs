@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8" >
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+  <style>
+    body {
+        background-color: white;
+        background-image: url(img/back.jpg);
+    }                       
+
+
+    .feather{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 2.5px;
+    }
+
+
+    h3 {
+      color: white;
+      font-weight: bold;
+    }
+
+
+    p {
+      color: white;
+    }
+
+
+    footer {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        background-color: black;
+        color: gold;
+     }
+  </style>
+<title>TRIVEL | Official Website </title>
+<body>
+  <nav class="navbar navbar-light d-flex justify-content-between" style="background-color: gold;">
+    <a class="navbar-brand ml-5 my-2 font-italic font-weight-bold">
+        <i data-feather="send"></i>TRIVEL
+    </a>
+    
+    <form class="form-inline ml-5 my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Type to Search" aria-label="Search">
+      <button class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="submit">
+        <i data-feather="search"></i>
+      </button>
+    </form>
+    
+    <div class="row">
+      <div class="col mx-0">
+      <a class="nav-link active" href="https://kelompok-15.github.io/Web-Booking-Travel-Online/">Home</a>
+      </div>
+
+      <div class="col mx-0">
+      <a class="nav-link" href="https://kelompok-15.github.io/Web-Booking-Travel-Online/paket-paket/paket-paket.html">Package</a>
+      </div>
+
+      <div class="btn-group dropleft col">
+          <button type="button" class="btn btn-dark btn-outline-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i data-feather="user"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="https://kelompok-15.github.io/Web-Booking-Travel-Online/Login/register.html">Sign-Up</a>
+            <a class="dropdown-item" href="https://kelompok-15.github.io/Web-Booking-Travel-Online/Login/login.html">Sign-In</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://kelompok-15.github.io/Web-Booking-Travel-Online/Popular%20Destination/index.html">Recommendation</a>
+            <a class="dropdown-item" href="https://kelompok-15.github.io/Web-Booking-Travel-Online/About%20Us/index.html">About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</nav>
+
+    <div class="container">
+                <div class="form-group mt-3">
+                    <label for="validationCustom05"><b>Contact's name</b></label>
+                    <input type="text" class="form-control" id="validationCustom05">
+                    <div class="invalid-feedback">
+                      Please input your Full Name.
+                    </div>
+              </div>
+            <div class="form-group">
+                  <label for="validationCustom06"><b>Email address</b></label>
+                  <input type="email" class="form-control" id="validationCustom06" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  <div class="invalid-feedback">
+                    Please input your Email.
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="validationCustom07"><b>Phone Number</b></label>
+                <input type="text" class="form-control" id="validationCustom07" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never phone number with anyone else.</small>
+                <div class="invalid-feedback">
+                  Please input your Phone Number.
+                </div>
+            </div>
+                <div class="form-group mt-3">
+                    <label for="validationCustom07"><b>Guest's Full Name</b></label>
+                    <input type="text" class="form-control" id="validationCustom07">
+                    <div class="invalid-feedback">
+                      Please input your Full Name.
+                    </div>
+          </div>
+          <div class="form-group mt-4 mb-3">
+            <label for="exampleFormControlFile1"><b>Foto / Scan KTP :</b></label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <div class="invalid-feedback">
+              Please insert your file
+            </div>
+          </div>
+          <hr>
+          <h4>Payment Method</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              <img src="imgP/paypal.png" width="75" height="75">
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+                <img src="imgP/visa.png" width="150" height="75">
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+                <img src="imgP/flazz.png" width="150" height="75">
+            </label>
+          </div>
+          <hr>
+        <a href="BookingDetailHotel.ejs"><button class="btn btn-warning btn-lg mb-5" type="submit">Continue</button></a>
+        </form>
+    </div>
+
+
+    <footer>
+      <span>Contact Us Through
+         <br>
+         <br>
+         <i data-feather="instagram" style="width: 35px; height: 35px;"></i>         
+         <i data-feather="facebook" style="width: 35px; height: 35px;"></i>         
+         <i data-feather="twitter" style="width: 35px; height: 35px;"></i>         
+         <i data-feather="github" style="width: 35px; height: 35px;"></i>
+         <br><br><br><br><br>
+         Copyright &copy; 2020 by TRIVEL 
+         <br>
+         All Rights Reserved
+      </span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            feather.replace();
+        </script>
+</body>
