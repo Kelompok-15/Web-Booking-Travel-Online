@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Kelompok-15/Web-Booking-Travel-Online#readme",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1"
   }
 }
