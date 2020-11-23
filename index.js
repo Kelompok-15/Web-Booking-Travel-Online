@@ -3,8 +3,12 @@ const port = process.env.PORT || 5000;
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.end('Hello World\n');
-})
+app.set('view engine', 'ejs');
+
+const indexRouter = require('./routes/index');
+const reccoRouter = require('./routes/recommendation');
+
+app.use('/', indexRouter);
+app.use('/reccomendation', reccoRouter);
 
 app.listen(port, () => console.log(`Server started on Port ${port}`));
