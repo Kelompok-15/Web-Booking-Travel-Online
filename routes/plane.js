@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/planeticket', 
+router.get('/', 
     async(req, res) => {
             res.render('pages/PemesananTiket');
     });
