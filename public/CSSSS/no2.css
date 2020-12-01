@@ -1,0 +1,59 @@
+.jumbotron{
+    background-image: url(os.jpg);
+    height: 500px;
+    background-size: cover;
+    text-align: center;
+}
+.jumbotron .display-4{
+    color: black;
+    margin-top: 150px;
+    font-family: merienda;
+}
+.row .gambar{
+    height: 400px;
+}
+.Paragraph{
+    font-size: large;
+}
+.page1{
+    margin-top: 100px;
+    padding: 0;
+    border-radius: 0;
+    background-color: orange;
+}
+.page1color{
+    color: white;
+    text-align: justify;
+}
+.gambar{
+    background-image: 50px;
+}
+
+.jumbotron .card-center{
+    background-position: center;
+}
+.card{
+    border-color: white;
+    position: center;
+}
+.card .card-header{
+    background-color: rgb(250, 191, 82);
+}
+.p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card .cado{
+    font-family: merienda;
+}
+.card .parah{
+    font-family: merienda;
+}
+.card-body{
+    background-color: whitesmoke;
+}
+.row .para{
+    font-family: merienda;
+}
+
+
+

@@ -1,9 +1,13 @@
 const express = require('express');
-
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-   res.render('pages/index');
+     res.render('pages/index');
+ })
+
+ router.get('/paket', async (req, res) => {
+    res.render('pages/paket');
 })
+
 
 module.exports = router;

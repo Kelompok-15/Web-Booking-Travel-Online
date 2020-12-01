@@ -1,0 +1,120 @@
+body{
+    background-color: whitesmoke;
+}
+.carousel-item{
+    height: 85vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.carousel-caption{
+    bottom: 200px;
+}
+.carousel-caption h5{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: merienda;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    font-family: poppins;
+}
+.carousel-caption a{
+    text-transform: uppercase;
+    background: #262626;
+    padding: 10px 30px;
+    color: #fff;
+    margin-top: 15px;
+}
+.jumbotron{
+    background-image: url(tokyo.jpg);
+    height: 70vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+.jumbotron h1{
+    font-family: merienda;
+    margin-top: 150px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-body{
+    padding: 0.5rem;
+}
+.card{
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0 , 125);
+    border-radius: 0;
+}
+.card1{
+    background-color: #6495ED;
+}
+.card2{
+    background-color: #cc6666;
+}
+.card3{
+    background-color: #cc9966;
+}
+h3.card-title{
+    font-size: 1.4rem;
+}
+h5.card-subtitle{
+    font-size: 1.0rem;
+}
+p.card-text{
+    padding-bottom: 0.8rem;
+    line-height: 2rem;
+}
+
+.card-deck .card:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0 , 4);
+    transform: scale(1.05);
+    transition: all 2s ease;
+    overflow: hidden;
+}
+.jumbo1{
+    background-image: url(france.jpg);
+    height: 70vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+.jumbo1 h1{
+    font-family: merienda;
+    margin-top: 150px;
+}
+.jumbo2{
+    background-image: url(aus.jpg);
+    height: 70vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+.jumbo2 h1{
+    font-family: merienda;
+    margin-top: 150px;
+}
+.card-text{
+    font-size: large;
+}
+.card-text1{
+    font-size: large;
+}
+footer {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-color:black;
+    color: gold;
+ }
+ .row .jpn{
+     font-family: merienda;
+ }
+ 
+
