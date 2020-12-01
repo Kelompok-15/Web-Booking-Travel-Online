@@ -1,24 +1,23 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', async (req, res) => {
-    res.render('pages/index');
-})
+router.get('/', 
+    async(req, res) => {
+            res.render('pages/sydney');
+    });
 
-router.get('/paket', async (req, res) => {
-    res.render('pages/paket');
-})
+router.get('/Dat8', 
+    async(req, res) => {
+            res.render('pages/Dat8');
+    });
 
-router.get("/sydney", async (req, res) => {
-    res.render('pages/sydney');
-})
+router.get('/book8', 
+    async(req, res) => {
+            res.render('pages/book8');
+    });
 
-router.get("/data8", async (req, res) => {
-    res.render('pages/data8');
-})
-
-router.get("/bookingdetail8", async (req, res) => {
-    res.render('pages/bookingdetail8');
-})
-
-module.exports = router;
+    
+router.get('/thank', 
+async(req, res) => {
+        res.render('pages/thank');
+});
