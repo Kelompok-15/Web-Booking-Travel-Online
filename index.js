@@ -12,11 +12,15 @@ const reccoRouter = require('./routes/recommendation');
 const hotelRouter = require('./routes/hotel');
 const planeRouter = require('./routes/plane');
 const trainRouter = require('./routes/train');
+const loginRouter = require('./routes/signin');
+const signupRouter = require('./routes/signup');
 
 app.use('/', indexRouter);
 app.use('/recommendation', reccoRouter);
 app.use('/hotel', hotelRouter);
 app.use('/plane', planeRouter);
 app.use('/train', trainRouter);
+app.use('/signin', signinRouter);
+app.use('/signup', signupRouter);
 
 app.listen(port, () => console.log(`Server started on Port ${port}`));
