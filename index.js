@@ -15,6 +15,7 @@ const trainRouter = require('./routes/train');
 const signinRouter = require('./routes/signin');
 const signupRouter = require('./routes/signup');
 const aboutusRouter = require('./routes/aboutus');
+const packageRouter = require('./routes/package');
 
 app.use('/', indexRouter);
 app.use('/recommendation', reccoRouter);
@@ -24,5 +25,6 @@ app.use('/train', trainRouter);
 app.use('/signin', signinRouter);
 app.use('/signup', signupRouter);
 app.use('/aboutus', aboutusRouter);
+app.use('/package', packageRouter);
 
 app.listen(port, () => console.log(`Server started on Port ${port}`));
