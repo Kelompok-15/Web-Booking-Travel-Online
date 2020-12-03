@@ -12,8 +12,9 @@ const reccoRouter = require('./routes/recommendation');
 const hotelRouter = require('./routes/hotel');
 const planeRouter = require('./routes/plane');
 const trainRouter = require('./routes/train');
-const loginRouter = require('./routes/signin');
+const signinRouter = require('./routes/signin');
 const signupRouter = require('./routes/signup');
+const aboutusRouter = require('./routes/aboutus');
 
 app.use('/', indexRouter);
 app.use('/recommendation', reccoRouter);
@@ -22,5 +23,6 @@ app.use('/plane', planeRouter);
 app.use('/train', trainRouter);
 app.use('/signin', signinRouter);
 app.use('/signup', signupRouter);
+app.use('/aboutus', aboutusRouter);
 
 app.listen(port, () => console.log(`Server started on Port ${port}`));
