@@ -6,52 +6,52 @@ router.get('/',
             res.render('pages/package');
     });
 
-router.get('/tokyo', 
+router.get('/Tokyo', 
     async(req, res) => {
             res.render('pages/tokyoo');
     });
 
-router.get('/osaka', 
+router.get('/Osaka', 
     async(req, res) => {
             res.render('pages/osakaa');
     });
 
-router.get('/kyoto', 
+router.get('/Kyoto', 
     async(req, res) => {
             res.render('pages/kyoto');
     });
 
 
-router.get('/paris', 
+router.get('/Paris', 
     async(req, res) => {
             res.render('pages/pariss');
     });
 
-router.get('/lyon', 
+router.get('/Lyon', 
     async(req, res) => {
             res.render('pages/lyon');
     });
 
-router.get('/nice', 
+router.get('/Nice', 
     async(req, res) => {
             res.render('pages/nice');
     });
 
-router.get('/melbourne', 
+router.get('/Melbourne', 
     async(req, res) => {
             res.render('pages/melbournee');
     });
 
-router.get('/sydney', 
+router.get('/Sydney', 
     async(req, res) => {
             res.render('pages/sydney');
     });
 
-router.get('/goldcoast', 
+router.get('/Goldcoast', 
     async(req, res) => {
             res.render('pages/goldcoast');
     });
 
-
+module.exports = router;
 
 
