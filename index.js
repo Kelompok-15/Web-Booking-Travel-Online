@@ -29,7 +29,7 @@ app.use('/signin', signinRouter);
 app.use('/signup', signupRouter);
 app.use('/aboutus', aboutusRouter);
 app.use('/package', packageRouter);
-app.use('/tokyo', tokyooRouter);
+app.use('/tokyoo', tokyooRouter);
 app.use('/paris', parissRouter);
 app.use('/sydney', sydneyyRouter);
 

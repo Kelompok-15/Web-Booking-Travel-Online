@@ -15,7 +15,7 @@ router.get("/data", async (req, res) => {
 })
 
 router.get("/booking", async (req, res) => {
-   res.render('pages/book1');
+   res.render('pages/book');
 })
 
 router.get("/Thankyou", async (req, res) => {
