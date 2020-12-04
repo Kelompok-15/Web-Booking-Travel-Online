@@ -10,6 +10,19 @@ router.get('/Tokyo',
     async(req, res) => {
             res.render('pages/tokyoo');
     });
+    router.get('/Tokyo/data', 
+    async(req, res) => {
+            res.render('pages/data');
+    });
+    router.get('/Tokyo/data/book', 
+    async(req, res) => {
+            res.render('pages/book');
+    });
+    router.get('/Tokyo/data/book/thank',  
+    async(req, res) => {
+            res.render('pages/thank');
+    });
+    
 
 router.get('/Osaka', 
     async(req, res) => {
@@ -44,7 +57,7 @@ router.get('/Melbourne',
 
 router.get('/Sydney', 
     async(req, res) => {
-            res.render('pages/sydney');
+            res.render('pages/sydneyy');
     });
 
 router.get('/Goldcoast', 
