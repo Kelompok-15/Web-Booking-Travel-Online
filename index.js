@@ -16,6 +16,9 @@ const signinRouter = require('./routes/signin');
 const signupRouter = require('./routes/signup');
 const aboutusRouter = require('./routes/aboutus');
 const packageRouter = require('./routes/package');
+const tokyooRouter = require('./routes/tokyoo');
+const parissRouter = require('./routes/pariss');
+const sydneyyRouter = require('./routes/sydneyy');
 
 app.use('/', indexRouter);
 app.use('/recommendation', reccoRouter);
@@ -26,5 +29,8 @@ app.use('/signin', signinRouter);
 app.use('/signup', signupRouter);
 app.use('/aboutus', aboutusRouter);
 app.use('/package', packageRouter);
+app.use('/tokyo', tokyooRouter);
+app.use('/paris', parissRouter);
+app.use('/sydney', sydneyyRouter);
 
 app.listen(port, () => console.log(`Server started on Port ${port}`));
