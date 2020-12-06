@@ -76,60 +76,57 @@
     </div>
 </nav>
 
-    <div class="container">
-        <div class="accordion" id="accordionExample"> 
-            <div class="card card-2 mt-4">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <img src="/imgP/hotel.png" width="50" height="50" id="hotel"/>Hotel</button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse toggle show" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1" class="mt-3">City or Destination or Hotel name</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Popular Destination</option>
-                      <option>Jakarta, Indonesia</option>
-                      <option>Bandung, Indonesia</option>
-                    </select>
-                  </div>
-                  <form>
-                    <label for="Departure" class="mb-3">Check-in</label>
-                    <input type="date" id="Departure" name="Departure">
-                  </form>
-
-                  <form>
-                    <label for="Departure" class="mb-3">Check-out</label>
-                    <input type="date" id="Departure" name="Departure">
-                  </form>
-
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect1">Guest</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                    </select>
-                  </div>
-                <hr>
-                <input type="checkbox" id="agreement" name="agreement">
-                <label for="agreement" class="mb-3">I agree for terms & use</label>
-                <div>
-                <a href="/hotel/roomsearch"><button type="button" class="btn btn-warning btn-lg mb-5"><img src="/imgP/search.svg"/>Search Ticket</button>
-              </a></div>
-            </div>
-              </div>
-                <div class="payment">
-                <h4 class="mt-3 mb-4">Payment Powered By :</h4>
-                <img src="/imgP/paypal.png" width="75" height="75"/>
-                <img src="/imgP/visa.png" width="150" height="75"/>
-                <img src="/imgP/flazz.png" width="150" height="75"/>
-                </div>
-              </div>
-            </div>
+<div class="container">
+  <div class="accordion" id="accordionExample">
+      <div class="card card-1 mt-4">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <img src="/imgP/hotel.png" width="50" height="50" id="train"/>Hotel</button>
+          </h2>
         </div>
-    </div>
+        <div id="collapseTwo" class="collapse toggle show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="form-group">
+              <label for="exampleFormControlSelect1" class="mt-3">City</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>-> Select your City</option>
+                <option>Bandung, Indonesia</option>
+              </select>
+            </div>
+            <form action="/hotel/addGeneral" method="post">
+              <label for="date" class="mb-3">Check-in</label>
+              <input type="date" id="Departure" name="date">
+            <hr>
+            <form action="/hotel/addGeneral" method="post">
+              <label for="date2" class="mb-3">Check-Out</label>
+              <input type="date" id="Departure" name="date2">
+            <hr>
+            <div class="mb-3" >Guest<img src="/imgP/passenger.svg" /></div>
+            <form action="/hotel/addGeneral" method="post">
+              <div class="form-group">
+            <label for="guest">No. of Guest</label>
+            <select type="text" class="form-control" name="guest">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+          </div>
+          <hr>
+          <input type="checkbox" id="agreement" name="agreement">
+          <label for="agreement" class="mb-3">I agree for terms & use</label>
+          <div>
+          <a href="/hotel/roomsearch"><button class="btn btn-warning btn-lg mb-5"><img src="/imgP/search.svg"/>Search Ticket</button>
+          </a></div></form></form></form>
+      </div>
+      </div>
+          <div class="payment">
+          <h4 class="mt-3 mb-4">Payment Powered By :</h4>
+          <img src="/imgP/paypal.png" width="75" height="75"/>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
     <footer class = "mt-4">
       <span>Contact Us Through
          <br>
