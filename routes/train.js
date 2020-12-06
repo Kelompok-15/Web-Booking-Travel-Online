@@ -6,48 +6,48 @@ const generalInfoKeretaController = require('../controllers/generalInfoKereta')
 
 router.get('/trainticket', 
     async(req, res) => {
-        res.render('PemesananTiketKereta');
+        res.render('pages/PemesananTiketKereta');
     });
 router.get('/trainsearchticket',
     async(req,res) => {
-        res.render('PencarianTiketKereta')
+        res.render('pages/PencarianTiketKereta')
     });
 router.get('/datatrain1',
     async(req,res) => {
-        res.render('DataKereta')
+        res.render('pages/DataKereta')
     });
 router.get('/datatrain2',
     async(req,res) => {
-        res.render('DataKereta2')
+        res.render('pages/DataKereta2')
     });
 router.get('/datatrain3',
     async(req,res) => {
-        res.render('DataKereta3')
+        res.render('pages/DataKereta3')
     });
 router.get('/bookingtrain1',
     async(req,res) => {
-        res.render('BookingDetailKereta',{
+        res.render('pages/BookingDetailKereta',{
             trains : await DataTrainController.find(),
             infoTrains : await generalInfoKeretaController.find()
         })
     });
 router.get('/bookingtrain2',
     async(req,res) => {
-        res.render('BookingDetailKereta2', {
+        res.render('pages/BookingDetailKereta2', {
             trains : await DataTrainController.find(),
             infoTrains : await generalInfoKeretaController.find()
         })
     });
 router.get('/bookingtrain3',
     async(req,res) => {
-        res.render('BookingDetailKereta3',{
+        res.render('pages/BookingDetailKereta3',{
             trains : await DataTrainController.find(),
             infoTrains : await generalInfoKeretaController.find()
         })
     });
 router.get('/thankyou',
     async(req,res) => {
-        res.render('Thankyou')
+        res.render('pages/Thankyou')
     });
 router.post('/addGeneral',
     async(req,res) => {
