@@ -82,65 +82,18 @@
         <div class="row">
             <div class="col-sm">
                 <h5 class="my-3 text-dark">Jakarta (All Airports) → Bali / Denpasar (DPS)-Ngurah Rai International Airport</h5>
-                <div class="mx-2 my-2">Friday, 18 September 2020</div>
-                <div class="mx-2 my-2">1 Adult / Economy
-                  <div class="text-right mb-3">
-                <a href="/plane/planeticket"><button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Change Search</button>
-                </a></div></div>
+                <form action="/plane/clearAll" 
+        method="post">
+        <div class="text-right mt-3 mb-3">
+        <button type="submit" class="btn btn-outline-danger btn-sm">
+            <i data-feather="x"></i>
+            Cancel Order
+        </button>
+      </div>
+      </form>
             </div>
         </div>
       </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Filter :</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Time
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">00.00-06.00</a>
-                    <a class="dropdown-item" href="#">06.00-12.00</a>
-                    <a class="dropdown-item" href="#">12.00-18.00</a>
-                    <a class="dropdown-item" href="#">18.00-24.00</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Airline
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#"><img src="/imgP/lion-button.png" width="25" height="25"/> Lion Air</a>
-                    <a class="dropdown-item" href="#"><img src="/imgP/batik.jpg" width="25" height="25"/> Batik Air</a>
-                    <a class="dropdown-item" href="#"><img src="/imgP/citilink.png" width="25" height="25"/> Citilink</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Transit
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Direct</a>
-                    <a class="dropdown-item" href="#">1 Transit</a>
-                    <a class="dropdown-item" href="#">2+ Transit</a>
-                  </div>
-                </li>
-              </ul>
-              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                See other dates
-              </a>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                <input type="date">
-                </div>
-              </div>
-            </div>
-          </nav>
-
           <table class="table border rounded">
             <thead>
               <tr>
@@ -159,8 +112,8 @@
                 <td><strong>7h 20m</strong></td>
                 <td>
                 <div>
-                  <div class="mb-3"><b>Rp850.000</b></div>
-                  <a href="/plane/planeprice1"><button class="btn btn-warning btn-lg mb-5">Choose Ticket</button></a>
+                  <div class="mb-3"><b>Rp850.000 / Ticket</b></div>
+                  <a href="/plane/dataplane1"><button class="btn btn-warning btn-lg mb-5">Choose Ticket</button></a>
                 </div>
               </td>
               </tr>
@@ -171,8 +124,8 @@
                 <td><strong>4h 5m</strong></td>
                 <td>
                   <div>
-                    <div class="mb-3"><b>Rp700.000</b></div>
-                    <a href="/plane/planeprice2"><button class="btn btn-warning btn-lg mb-5">Choose Ticket</button></a>
+                    <div class="mb-3"><b>Rp700.000 / Ticket</b></div>
+                    <a href="/plane/dataplane2"><button class="btn btn-warning btn-lg mb-5">Choose Ticket</button></a>
                   </div>
                 </td>
               </tr>
@@ -183,8 +136,8 @@
                 <td><strong>4h 10m</strong></td>
                 <td>
                   <div>
-                    <div class="mb-3"><b>Rp640.000</b></div>
-                    <a href="/plane/planeprice3"><button class="btn btn-warning btn-lg mb-5">Choose Ticket</button></a>
+                    <div class="mb-3"><b>Rp640.000 / Ticket</b></div>
+                    <a href="/plane/dataplane3"><button class="btn btn-warning btn-lg mb-5">Choose Ticket</button></a>
                   </div>
                 </td>
               </tr>

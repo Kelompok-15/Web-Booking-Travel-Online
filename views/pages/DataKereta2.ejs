@@ -57,7 +57,6 @@
         color: gold;
      }
   </style>
-
 <title>Train Data</title>
 <body>
   <nav class="navbar navbar-light d-flex justify-content-between" style="background-color: gold;">
@@ -98,88 +97,63 @@
 </nav>
 
     <div class="container">
-        <h4 class="mt-4">Contact Detail</h4>
-            <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationCustom01">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" required>
-                <div class="invalid-feedback">
-                    Please enter your First name.
-                  </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="validationCustom02">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" required>
-                <div class="invalid-feedback">
-                    Please enter your Last name.
-                  </div>
-              </div>
-            </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="mt-4">Contact Detail</h4>
+        <form action="/train/addData2" method="post">
             <div class="form-group">
-                  <label for="validationCustom06">Email address</label>
-                  <input type="email" class="form-control" id="validationCustom06" aria-describedby="emailHelp" required>
+                <label for="fName">First name</label>
+                <input type="text" class="form-control" name="fName" required>
+            </div>
+          <form action="/train/addData2" method="post">
+              <div class="form-group">
+                  <label for="lName">Last name</label>
+                  <input type="text" class="form-control" name="lName" required>
+              </div>
+            <form action="/train/addData2" method="post">
+            <div class="form-group">
+                  <label for="eMail">Email address</label>
+                  <input type="email" class="form-control" name="eMail" aria-describedby="emailHelp" required>
                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                   <div class="invalid-feedback">
                     Please input your Email.
                   </div>
             </div>
+            <form action="/train/addData2" method="post">
             <div class="form-group">
-                <label for="validationCustom07">Phone Number</label>
-                <input type="text" class="form-control" id="validationCustom07" required>
-                <small id="emailHelp" class="form-text text-muted">We'll never phone number with anyone else.</small>
+                <label for="phoneNo">Phone Number</label>
+                <input type="text" class="form-control" name="phoneNo" required>
                 <div class="invalid-feedback">
                   Please input your Phone Number.
                 </div>
           </div>
           <hr>
           <h4>Passenger Detail</h4>
-            <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationCustom01">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" required>
-                <div class="invalid-feedback">
-                    Please enter your First name.
-                  </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="validationCustom02">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" required>
-                <div class="invalid-feedback">
-                    Please enter your Last name.
-                  </div>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="col mb-3">
-                <label for="validationCustom03">City</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-                <div class="invalid-feedback">
-                  Please provide a valid city.
-                </div>
-              </div>
-            </div>
+              <form action="/train/addData2" method="post">
             <div class="form-group">
-                  <label for="validationCustom06">Email address</label>
-                  <input type="email" class="form-control" id="validationCustom06" aria-describedby="emailHelp" required>
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                  <div class="invalid-feedback">
-                    Please input your Email.
-                  </div>
+                <label for="fName2">First name</label>
+                <input type="text" class="form-control" name="fName2" required>
             </div>
+            <form action="/train/addData2" method="post">
+              <div class="form-group">
+                  <label for="lName2">Last name</label>
+                  <input type="text" class="form-control" name="lName2" required>
+              </div>
+            <form action="/train/addData2" method="post">
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" name="city" required>
+              </div>
+            <form action="/train/addData2" method="post">
             <div class="form-group">
-                <label for="validationCustom07">Phone Number</label>
-                <input type="text" class="form-control" id="validationCustom07" required>
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                <div class="invalid-feedback">
-                  Please input your Phone Number.
+                  <label for="eMail2">Email address</label>
+                  <input type="email" class="form-control" name="eMail2" required>
+                  <small class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-                <div class="form-group mt-4 mb-3">
-                  <label for="exampleFormControlFile1">Foto / Scan KTP :</label>
-                  <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
-                  <div class="invalid-feedback">
-                    Please insert your file
-                  </div>
-                </div>
+            <form action="/train/addData2" method="post">
+            <div class="form-group">
+                <label for="phoneNo2">Phone Number</label>
+                <input type="text" class="form-control" name="phoneNo2" required>
           </div>
           <hr>
           <h4>Payment Method</h4>
@@ -189,22 +163,10 @@
               <img src="/imgP/paypal.png" width="75" height="75"/>
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-                <img src="/imgP/visa.png" width="150" height="75"/>
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-                <img src="/imgP/flazz.png" width="150" height="75"/>
-            </label>
-          </div>
           <hr>
-        <a href="/train/bookingtrain2"><button class="btn btn-warning btn-lg mb-5" type="submit">Continue</button></a>
-        </form>
-    </div>
+        <button type="submit" class="btn btn-warning btn-lg mb-5" name="submit">Continue</button>
+      </form></form></form></form></form></form></form></form></form>
+    </div></div></div>
     <footer>
       <span>Contact Us Through
          <br>
