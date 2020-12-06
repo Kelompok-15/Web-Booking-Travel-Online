@@ -6,39 +6,39 @@ const generalInfoController = require('../controllers/generalInfo');
 
 router.get('/planeticket', 
     async(req, res) => {
-            res.render('PemesananTiket') // SATU
+            res.render('pages/PemesananTiket') // SATU
     })
 router.get('/planesearchticket',
     async(req,res) => {
-        res.render('PencarianTiketPesawat')
+        res.render('pages/PencarianTiketPesawat')
     });
 router.get('/planeprice1',
     async(req,res) => {
-        res.render('PriceDetail')
+        res.render('pages/PriceDetail')
     });
 router.get('/planeprice2',
     async(req,res) => {
-        res.render('PriceDetailPesawat2')
+        res.render('pages/PriceDetailPesawat2')
     });
 router.get('/planeprice3',
     async(req,res) => {
-        res.render('PriceDetailPesawat3')
+        res.render('pages/PriceDetailPesawat3')
     });
 router.get('/dataplane1',
     async(req,res) => {
-        res.render('Data')  // DUA
+        res.render('pages/Data')  // DUA
     });
 router.get('/dataplane2',
     async(req,res) => {
-        res.render('Data1')
+        res.render('pages/Data1')
     });
 router.get('/dataplane3',
     async(req,res) => {
-        res.render('Data2')
+        res.render('pages/Data2')
     });
 router.get('/bookingplane1',
     async(req,res) => {
-        res.render('BookingDetail',
+        res.render('pages/BookingDetail',
         {
             planes: await DataPlaneController.find(), 
             info: await generalInfoController.find() // TIGA
@@ -46,21 +46,21 @@ router.get('/bookingplane1',
     });
 router.get('/bookingplane2',
     async(req,res) => {
-        res.render('BookingDetailPesawat2',{
+        res.render('pages/BookingDetailPesawat2',{
             planes: await DataPlaneController.find(), 
             info: await generalInfoController.find() // TIGA
         })
     });
 router.get('/bookingplane3',
     async(req,res) => {
-        res.render('BookingDetailPesawat3',{
+        res.render('pages/BookingDetailPesawat3',{
             planes: await DataPlaneController.find(), 
             info: await generalInfoController.find() // TIGA
         })
     });
 router.get('/thankyou',
     async(req,res) => {
-        res.render('Thankyou')
+        res.render('pages/Thankyou')
     });
 
 router.post('/addGeneral',
