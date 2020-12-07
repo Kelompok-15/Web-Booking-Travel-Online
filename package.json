@@ -4,7 +4,7 @@
   "description": "Trivel provides solutions for your travel needs, airline tickets, hotels & lodging",
   "main": "index.js",
   "engines":{
-    "node": "12.11.1"
+    "node": "14.15.0"
   },
   "scripts": {
     "dev": "nodemon",
