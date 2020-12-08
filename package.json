@@ -4,7 +4,6 @@
   "description": "Trivel provides solutions for your travel needs, airline tickets, hotels & lodging",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
@@ -26,7 +25,6 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.6"
+    "express": "^4.17.1"
   }
 }
