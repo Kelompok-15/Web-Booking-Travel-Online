@@ -10,15 +10,15 @@
     <div class="login-box bg-light">
         <img src="/image/user.png" class="user">
         <h3>Register</h3>
-        <form>
+        <form method="POST" action="/signup/register">
           <p>Full Name</p>
-          <input type="text" class="input-field" required>
+          <input type="text" class="input-field form-control" name="fullname" required>
           <p>Phone Number</p>
-          <input type="angka" class="input-field form-control" placeholder="example: 0812xxxxxxxx" required>
+          <input type="angka" class="input-field form-control" name="phonenumber" placeholder="example: 0812xxxxxxxx" required>
           <p>Email</p>
-          <input type="text" class="input-field form-control" placeholder="example@gmail.com" required>
+          <input type="text" class="input-field form-control" name="email" placeholder="example@gmail.com" required>
           <p>Password</p>
-          <input type="password" class="input-field form-control" required> 
+          <input type="password" class="input-field form-control"  name="password" required>
           <p></p>
           <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
