@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 
 const router = express.Router();
 
-const signupController = require('../controllers/singup');
+const signupController = require('../controllers/signup');
 
 router.get('/', async (req, res) => {
    res.render('pages/signup');

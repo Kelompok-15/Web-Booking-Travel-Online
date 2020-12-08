@@ -12,7 +12,7 @@
             body {
                 background-color: white;
                 background-image: url(img/back.jpg);
-            }                       
+            }
 
             .feather{
                 width: 20px;
@@ -39,42 +39,42 @@
           </style>
     </head>
     <body>
-        <nav class="navbar navbar-light d-flex justify-content-between" style="background-color: gold;">
-            <a class="navbar-brand ml-5 my-2 font-italic font-weight-bold">
-                <i data-feather="send"></i>TRIVEL
-            </a>
-            
-            <form class="form-inline ml-5 my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Type to Search" aria-label="Search">
-              <button class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="submit">
-                <i data-feather="search"></i>
+      <nav class="navbar navbar-light d-flex justify-content-between" style="background-color: gold;">
+        <a class="navbar-brand ml-5 my-2 font-italic font-weight-bold">
+            <i data-feather="send"></i>TRIVEL
+        </a>
+
+        <form class="form-inline ml-5 my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Type to Search" aria-label="Search">
+          <button class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="submit">
+            <i data-feather="search"></i>
+          </button>
+        </form>
+
+        <div class="row">
+          <div class="col mx-0">
+          <a class="nav-link active" href="/">Home</a>
+          </div>
+
+          <div class="col mx-0">
+          <a class="nav-link" href="/package">Package</a>
+          </div>
+
+          <div class="btn-group dropleft col">
+              <button type="button" class="btn btn-dark btn-outline-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i data-feather="user"></i>
               </button>
-            </form>
-            
-            <div class="row">
-              <div class="col mx-0">
-              <a class="nav-link active" href="index.html">Home</a>
-              </div>
-
-              <div class="col mx-0">
-              <a class="nav-link" href="/package">Package</a>
-              </div>
-
-              <div class="btn-group dropleft col">
-                  <button type="button" class="btn btn-dark btn-outline-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i data-feather="user"></i>
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/signup">Sign-Up</a>
-                    <a class="dropdown-item" href="/signin">Sign-In</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/recommendation">Recommendation</a>
-                    <a class="dropdown-item" href="About Us/index.html">About Us</a>
-                  </div>
-                </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="/signup">Sign-Up</a>
+                <a class="dropdown-item" href="/signin">Sign-In</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/recommendation">Recommendation</a>
+                <a class="dropdown-item" href="/aboutus">About Us</a>
               </div>
             </div>
-        </nav>
+          </div>
+        </div>
+    </nav>
 
         <div class="container">
           <div class="row">
@@ -84,8 +84,8 @@
                   <div class="row mt-3">
                     <p style="color: black; font-size: 30px;"><b><i data-feather="send"></i><i>TRIVEL</i> | Your Travel Solution</b></p>
                     <p style="color: black;"><i>Various destination, best service, and affordable price.</i></p>
-                    
-                    <a class="col" href="Login/register.html">
+
+                    <a class="col" href="/signup">
                       <button type="button" class="btn btn-outline-light" style="background-color: rgba(26, 22, 22, 0.966);"><i>Join us now!</i></button>
                     </a>
                   </div>
@@ -96,13 +96,13 @@
                     <div class="col">
                       <h4 style="text-align: center; font-weight: bolder;">BOOKING FLIGHTS, TRAIN, & HOTEL<br></h4>
                       <h5 style="text-align: center; font-weight: lighter;">Get the best price here, over 10,000,000+ clients<br></h5>
-                    </div>    
+                    </div>
                   </div>
-    
+
                   <div class="row">
-                    <a href="/plane" class="btn btn-outline-light btn-lg btn-block role= button" style="background-color: rgba(26, 22, 22, 0.966); font-weight: bold;">Flights</a>
-                    <a href="/train" class="btn btn-outline-light btn-lg btn-block role= button" style="background-color: rgba(26, 22, 22, 0.966); font-weight: bold;">Train</a>
-                    <a href="/hotel" class="btn btn-outline-light btn-lg btn-block role= button" style="background-color: rgba(26, 22, 22, 0.966); font-weight: bold;">Hotel</a>
+                    <a href="/plane/planeticket" class="btn btn-outline-light btn-lg btn-block role= button" style="background-color: rgba(26, 22, 22, 0.966); font-weight: bold;">Flights</a>
+                    <a href="/train/trainticket" class="btn btn-outline-light btn-lg btn-block role= button" style="background-color: rgba(26, 22, 22, 0.966); font-weight: bold;">Train</a>
+                    <a href="/hotel/hotelroom" class="btn btn-outline-light btn-lg btn-block role= button" style="background-color: rgba(26, 22, 22, 0.966); font-weight: bold;">Hotel</a>
                   </div>
                 </div>
               </div>
@@ -158,7 +158,7 @@
                 <div class="col pb-3">
                   <h3 style="color:black; font-size: 40px;">Special Offer<br></h3>
                 </div>
-                  
+
                 <a class="col text-right mt-2 mr-3" href="/package">
                     <button type="button" class="btn btn-outline-dark">Click For More</button>
                 </a>
@@ -177,7 +177,7 @@
                   <a href="/package/paris" class="card" style="width: 18rem;">
                     <img src="/img/pariss.jpg" class="card-img-top" alt="par">
                     <div class="card-body" style="background-color: black;">
-                      <p class="card-text" style="color: white; font-weight: 500;">Experience holidays in Paris with an affordable price.</p>                
+                      <p class="card-text" style="color: white; font-weight: 500;">Experience holidays in Paris with an affordable price.</p>
                     </div>
                   </a>
                 </div>
@@ -200,7 +200,7 @@
             <div class="col">
               <div class="row">
                 <div class="col">
-                  <h3><b>Popular Destination</b></h3> 
+                  <h3><b>Popular Destination</b></h3>
                   <p style="color: white;">
                     You don't know where to go next? Popular destination is a right solution for you
                     who want to explore a new destination that we have already
@@ -211,7 +211,7 @@
                   <button type="button" class="btn btn-outline-light">Click For More</button>
                 </a>
               </div>
-              
+
               <div class="row">
                 <div class="col-sm">
                   <div class="row mb-3">
@@ -242,17 +242,17 @@
                       </a>
                     </div>
                   </div>
-                
+
                   <div class="row">
                     <div class="card w-auto h-auto" style="background-color: darkslategrey;">
                       <img src="/img/boratour.jpg" class="card-img-top" alt="bora">
                       <div class="card-body pb-4">
                         <h3 class="card-title">Bora-Bora</h3>
                         <p class="card-text">Bora Bora is part of the Leeward Islands of French Polynesia, in the Pacific Ocean. Visitors come for its tropical climate and stay in resorts and over-water bungalows among the multiple islands of the Bora Bora island group. Many visit Bora Bora to get away from the hustle and bustle of modern life.</p>
-                        <a href="Popular Destination/bora.html">See Next>>></a>
+                        <a href="recommendation/bora">See Next>>></a>
                       </div>
                     </div>
-                  </div>  
+                  </div>
 
                 </div>
 
@@ -264,7 +264,7 @@
                         <div class="card-body">
                           <h3 class="card-title">Paris</h3>
                           <p class="card-text">Paris's seductive charms are legendary, and for good reason. Inviting sidewalk cafes, gleaming boutiques</p>
-                          <a href="Popular Destination/paris.html">See Next>>></a>
+                          <a href="recommendation/paris">See Next>>></a>
                         </div>
                       </div>
                     </div>
@@ -273,9 +273,9 @@
                       <div class="card h-100 w-100" style="background-color: darkslategrey;">
                         <img src="/img/rajaampat.jpg" class="card-img-top" alt="rajaampat">
                         <div class="card-body">
-                          <h3 class="card-title">Raja Ampat</h3>  
+                          <h3 class="card-title">Raja Ampat</h3>
                           <p class="card-text">Located off the northwest tip of Bird's Head Peninsula on the island of New Guinea, in Indonesia's West Papua</p>
-                          <a href="Popular Destination/rajaampat.html">See Next>>></a>
+                          <a href="recommendation/rajaampat">See Next>>></a>
                         </div>
                       </div>
                     </div>
@@ -288,9 +288,9 @@
                         <div class="card-body">
                           <h3 class="card-title">Sydney</h3>
                           <p class="card-text">Sydney is the first stop on many Australian itineraries, and for good reason. It's an inviting blend of the exhilarating and easygoing.</p>
-                          <a href="Popular Destination/sydney.html">See Next>>></a>
+                          <a href="recommendation/sydney">See Next>>></a>
                         </div>
-                      </div>                  
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -303,22 +303,22 @@
             <span>Contact Us Through
                <br>
                <br>
-               <i data-feather="instagram" style="width: 35px; height: 35px;"></i>         
-               <i data-feather="facebook" style="width: 35px; height: 35px;"></i>         
-               <i data-feather="twitter" style="width: 35px; height: 35px;"></i>         
+               <i data-feather="instagram" style="width: 35px; height: 35px;"></i>
+               <i data-feather="facebook" style="width: 35px; height: 35px;"></i>
+               <i data-feather="twitter" style="width: 35px; height: 35px;"></i>
                <i data-feather="github" style="width: 35px; height: 35px;"></i>
                <br><br><br><br><br>
-               Copyright &copy; 2020 by TRIVEL 
+               Copyright &copy; 2020 by TRIVEL
                <br>
                All Rights Reserved
             </span>
           </footer>
 
-        
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        
+
         <script src="https://unpkg.com/feather-icons"></script>
         <script>
             feather.replace();
