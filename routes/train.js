@@ -84,7 +84,7 @@ router.post('/addData2',
         const city = req.body.city;
         const phoneNo2 = req.body.phoneNo2;
         await generalInfoKeretaController.create(fName, lName, eMail, phoneNo, fName2, lName2, eMail2, city, phoneNo2);
-        res.redirect('/train/bookingtrain1')
+        res.redirect('/train/bookingtrain2')
     }
 )
 router.post('/addData3',
@@ -99,7 +99,7 @@ router.post('/addData3',
         const city = req.body.city;
         const phoneNo2 = req.body.phoneNo2;
         await generalInfoKeretaController.create(fName, lName, eMail, phoneNo, fName2, lName2, eMail2, city, phoneNo2);
-        res.redirect('/train/bookingtrain1')
+        res.redirect('/train/bookingtrain3')
     }
 )
 router.post('/clearAll', 
