@@ -33,7 +33,7 @@ body{
     margin-top: 15px;
 }
 .jumbotron{
-    background-image: url(tokyo.jpg);
+    background-image: url(/gambar/tokyo.jpg);
     height: 70vh;
     background-size: cover;
     -webkit-background-size: cover;
@@ -81,7 +81,7 @@ p.card-text{
     overflow: hidden;
 }
 .jumbo1{
-    background-image: url(france.jpg);
+    background-image: url(/gambar/france.jpg);
     height: 70vh;
     background-size: cover;
     -webkit-background-size: cover;
@@ -91,7 +91,7 @@ p.card-text{
     margin-top: 150px;
 }
 .jumbo2{
-    background-image: url(aus.jpg);
+    background-image: url(/gambar/aus.jpg);
     height: 70vh;
     background-size: cover;
     -webkit-background-size: cover;
