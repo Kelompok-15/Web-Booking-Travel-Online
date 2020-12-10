@@ -42,6 +42,7 @@ const signinRouter = require('./routes/signin');
 const signupRouter = require('./routes/signup');
 const aboutusRouter = require('./routes/aboutus');
 const packageRouter = require('./routes/package');
+const logoutRouter = require('./routes/logout');
 
 app.use('/', indexRouter);
 app.use('/recommendation', reccoRouter);
@@ -51,6 +52,6 @@ app.use('/signin', signinRouter);
 app.use('/signup', signupRouter);
 app.use('/aboutus', aboutusRouter);
 app.use('/package', packageRouter);
-
+app.use('/logout', logoutRouter);
 
 app.listen(port, () => console.log(`Server started on Port ${port}`));
