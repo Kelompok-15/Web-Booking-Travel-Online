@@ -70,8 +70,7 @@ router.post('/addData',
         const phoneNo2 = req.body.phoneNo2;
         await generalInfoKeretaController.create(fName, lName, eMail, phoneNo, fName2, lName2, eMail2, city, phoneNo2);
         res.redirect('/train/bookingtrain1')
-    }
-)
+    });
 router.post('/addData2',
     async(req,res) => {
         const fName = req.body.fName;
@@ -85,8 +84,7 @@ router.post('/addData2',
         const phoneNo2 = req.body.phoneNo2;
         await generalInfoKeretaController.create(fName, lName, eMail, phoneNo, fName2, lName2, eMail2, city, phoneNo2);
         res.redirect('/train/bookingtrain2')
-    }
-)
+    });
 router.post('/addData3',
     async(req,res) => {
         const fName = req.body.fName;
@@ -100,8 +98,7 @@ router.post('/addData3',
         const phoneNo2 = req.body.phoneNo2;
         await generalInfoKeretaController.create(fName, lName, eMail, phoneNo, fName2, lName2, eMail2, city, phoneNo2);
         res.redirect('/train/bookingtrain3')
-    }
-)
+    });
 router.post('/clearAll', 
     async (req, res) => {
         //remove all data
@@ -109,6 +106,6 @@ router.post('/clearAll',
         await generalInfoKeretaController.destroy();
         //back to order page
         res.redirect('/train/trainticket');
-    }
-)
+    });
+
 module.exports = router;
