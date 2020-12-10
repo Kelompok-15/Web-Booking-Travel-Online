@@ -15,8 +15,7 @@ async function create(fName, lName, eMail, phoneNo, fName2, lName2, eMail2, city
             eMail2 : eMail2,
             city : city,
             phoneNo2 : phoneNo2
-        }
-    )
+        })
 }
 async function destroy() {
     return await generalInfoKereta.deleteMany();
