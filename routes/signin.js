@@ -23,6 +23,8 @@ router.post("/login",
             bcrypt.compare(password, data.password, (err, result) => {
                if (err) throw err;
                if (result) {
+                  const name = data.fullname;
+                  req.session.user = name;
                   res.redirect('/');
                }
                else {

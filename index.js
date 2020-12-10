@@ -17,6 +17,11 @@ app.use(session ({
     cookie: {}
 }));
 
+app.use(function(req, res, next) {
+    res.locals.user = req.session.user;
+    next();
+});
+
 const mongoose = require('mongoose')
 mongoose.connect(
     'mongodb+srv://Trivel:33wijDfypDkwaD3s@cluster0.awqkm.mongodb.net/pemesanantiket?retryWrites=true&w=majority',

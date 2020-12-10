@@ -35,11 +35,19 @@
                 <i data-feather="user"></i>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="/signup">Sign-Up</a>
-                <a class="dropdown-item" href="/signin">Sign-In</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/recommendation">Recommendation</a>
-                <a class="dropdown-item" href="/aboutus">About Us</a>
+                <% if (locals.user) { %>
+                  <div class="dropdown-item">Hi <%=user%>!</div>
+                  <a class="dropdown-item" href="/recommendation">Recommendation</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/aboutus">About Us</a>
+                  <a class="dropdown-item" href="/logout">Logout</a>
+                <% } else { %>
+                  <a class="dropdown-item" href="/signup">Sign-Up</a>
+                  <a class="dropdown-item" href="/signin">Sign-In</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/recommendation">Recommendation</a>
+                  <a class="dropdown-item" href="/aboutus">About Us</a>
+                <% } %>
               </div>
             </div>
           </div>
