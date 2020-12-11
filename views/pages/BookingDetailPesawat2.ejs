@@ -126,23 +126,24 @@
                     <h5 class="my-3 text-dark"><strong>PhoneNo : <%= info[0].phoneNo2%></strong></h5>
           </div>
       </div>
-                    </div>
-                </div>
+    </div>
+  </div>
                 <div class="mt-3">Payment Method :
                   <img src="/imgP/paypal.png" height="75" width="75"/>
               </div>
-              <form action="/plane/clearAll" 
-                method="post">
+              <form action="/plane/clearAll" method="post">
                 <div class="text-right mt-3 mb-3">
                 <button type="submit" class="btn btn-outline-danger btn-sm">
                     <i data-feather="x"></i>
                     Cancel Order
                 </button>
               </div>
-            </form>   
+            </form>
+            <form action="/plane/clearAllThankyou" method="post">
         <div class="text-right mb-3">
-        <a href="/plane/thankyou"><button class="btn btn-warning btn-lg "><img src ="/imgP/thumbs-up.svg" width="25" height="25" class="mr-2"/>Yes,Book Ticket</button></a>
+          <button class="btn btn-warning btn-lg "><img src ="/imgP/thumbs-up.svg" width="25" height="25" class="mr-2"/>Yes,Book Ticket</button></a>
         </div>
+        </form>
     </div>
     <footer>
         <span>Contact Us Through

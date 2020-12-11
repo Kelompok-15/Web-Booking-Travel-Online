@@ -129,4 +129,13 @@ router.post('/clearAll',
         res.redirect('/plane/planeticket');
     }
 )
+router.post('/clearAllThankyou', 
+    async (req, res) => {
+        //remove all data
+        await DataPlaneController.destroy();
+        await generalInfoController.destroy();
+        //back to order page
+        res.redirect('/plane/thankyou');
+    }
+)
 module.exports = router;
