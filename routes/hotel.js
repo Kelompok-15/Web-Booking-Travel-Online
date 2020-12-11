@@ -166,4 +166,13 @@ router.post('/clearAll',
         res.redirect('/hotel/hotelroom');
     }
 )
+router.post('/clearAllThankyou', 
+    async (req, res) => {
+        //remove all data
+        await DataHotelController.destroy();
+        await generalInfoHotelController.destroy();
+        //back to order page
+        res.redirect('/hotel/thankyou');
+    }
+)
 module.exports = router;
