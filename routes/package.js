@@ -20,7 +20,7 @@ router.get('/tokyo',
 
         router.get('/tokyo/data', 
                 async(req, res) => {
-                        res.render('pages/dat');
+                        res.render('pages/Dat');
                 });
 
         router.post('/addDat',
