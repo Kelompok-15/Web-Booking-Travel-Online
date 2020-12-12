@@ -74,7 +74,7 @@ router.get('/osaka',
 
         router.get('/osaka/data', 
                 async(req, res) => {
-                        res.render('pages/dat2');
+                        res.render('pages/Dat2');
                 });
 
         router.post('/addDat2',
@@ -126,7 +126,7 @@ router.get('/kyoto',
 
     router.get('/kyoto/data', 
     async(req, res) => {
-            res.render('pages/dat3');
+            res.render('pages/Dat3');
     });
 
     router.post('/addDat3',
@@ -180,7 +180,7 @@ router.get('/paris',
 
     router.get('/paris/data', 
     async(req, res) => {
-            res.render('pages/dat4');
+            res.render('pages/Dat4');
     });
 
     router.post('/addDat4',
@@ -234,7 +234,7 @@ router.get('/lyon',
 
     router.get('/lyon/data', 
     async(req, res) => {
-            res.render('pages/dat5');
+            res.render('pages/Dat5');
     });
 
     router.post('/addDat5',
@@ -288,7 +288,7 @@ router.get('/nice',
 
     router.get('/nice/data', 
     async(req, res) => {
-            res.render('pages/dat6');
+            res.render('pages/Dat6');
     });
 
     router.post('/addDat6',
@@ -342,7 +342,7 @@ router.get('/melbourne',
 
     router.get('/melbourne/data', 
     async(req, res) => {
-            res.render('pages/dat7');
+            res.render('pages/Dat7');
     });
 
     router.post('/addDat7',
@@ -396,7 +396,7 @@ router.get('/sydney',
 
     router.get('/sydney/data', 
     async(req, res) => {
-            res.render('pages/dat8');
+            res.render('pages/Dat8');
     });
 
     router.post('/addDat8',
@@ -450,7 +450,7 @@ router.get('/goldcoast',
 
     router.get('/goldcoast/data', 
     async(req, res) => {
-            res.render('pages/dat9');
+            res.render('pages/Dat9');
     });
 
     router.post('/addDat9',
